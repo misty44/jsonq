@@ -113,7 +113,7 @@ func (j *JsonQuery) Int(s ...string) (int, error) {
 	return intFromInterface(val)
 }
 
-func (j *JsonQuery) Int64(s ...string) (int, error) {
+func (j *JsonQuery) Int64(s ...string) (int64, error) {
 	val, err := rquery(j.blob, s...)
 	if err != nil {
 		return 0, err
